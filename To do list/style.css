@@ -51,19 +51,18 @@ header p{
     border-radius: 5px;
     cursor: pointer;
 }
-.undone-tasks{
-    margin-top:19px;
-}
+
 .undone-tasks h2{
     margin-left: 30px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
     color:#50C878;
 }
 .undone-tasks .task-content{
     margin-left:30px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    padding:10px;
+   /* margin-bottom: 10px; */
     
 }
 .undone-tasks .task-content p{
