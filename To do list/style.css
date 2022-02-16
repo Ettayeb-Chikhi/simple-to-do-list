@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    min-height:100vh;
+    width: 800px;
+    
+}
+
+header{
+    padding:10px;
+    text-align: center;
+    margin-top: 10px;
+}
+header h1{
+    color:#50C878;
+}
+header p{
+    margin-top: 10px;
+}
+.input-area{
+    margin-top: 15px;
+    text-align: center;
+}
+.input-area #task{
+    width:400px;
+    height:40px;
+    border : 2px solid #50C878 ;
+    border-radius: 10px;
+}
+.input-area input[type="submit"]{
+    display: inline-block;
+    width:60px;
+    height:30px;
+    margin-left: 10px;
+    color: white;
+    background-color:#50C878;
+    border : 2px solid #50C878 ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.undone-tasks{
+    margin-top:19px;
+}
+.undone-tasks h2{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color:#50C878;
+}
+.undone-tasks .task-content{
+    margin-left:30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.undone-tasks .task-content p{
+    font-size: 1.6rem;
+    width: 500px;
+}
+.undone-tasks .task-content .remove-btn,.done-task .content .remove-btn{
+    width:70px;
+    height:40px;
+    padding: 10px;
+    border : 2px solid #F90716 ;
+    background-color: #F90716;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.undone-tasks .task-content .done-btn{
+    width:70px;
+    height:40px;
+    padding: 10px;
+    border : 2px solid #1597E5 ;
+    background-color: #1597E5;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.done-task .content{
+    margin-left:30px;
+    margin-bottom:10px;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+.done-task .content p{
+    font-size: 1.2rem;
+    width: 500px;
+    color: grey
+}
+.done-task h2{
+    color:#50C878;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
