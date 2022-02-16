@@ -50,30 +50,22 @@ function doneTask(e){
     div.appendChild(remove);
     container.appendChild(div);
     // now removing the task
+    
      const parent = e.target.parentNode;
+     const grand= parent.parentNode;
+     console.log(grand.nodeName);
      while(parent.firstChild){
          parent.removeChild(parent.firstChild);
      }
+     grand.removeChild(parent);
 }
 
 // function to remove a task
 function removeTask(e){
     const parent = e.target.parentNode;
+    const grand = parent.parentNode;
     while(parent.firstChild){
         parent.removeChild(parent.firstChild);
     }
+    grand.removeChild(parent) // to delete the container div
 }
-/*
-check.addEventListener("click",function(){
-        console.log("hi");
-        if(this.checked){
-            const parent = this.parentNode;
-            console.log("checked");
-            while(parent.firstChild){
-                parent.removeChild(parent.firstChild);
-            }
-        }else{
-            console.log("unchecked");
-        }
-    })
-*/
